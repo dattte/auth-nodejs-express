@@ -31,6 +31,7 @@ module.exports = {
           password: hashSHA(req.body.password),
           name: req.body.name,
           phoneNumber: req.body.phoneNumber,
+          address: req.body.address,
         });
     
         UserModel.create(userNew, (err, result) => {
